@@ -99,7 +99,7 @@ function ConfirmPayment() {
                 color="secondary"
                 fullWidth
                 sx={{ color: "white" }}
-                onClick={() => navigate("/pay")}
+                onClick={() => navigate("/payment-flow/pay")}
               >
                 Pay
               </Button>

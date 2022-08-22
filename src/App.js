@@ -11,8 +11,8 @@ function App() {
       <Router>
         <CssBaseline />
         <Routes>
-          <Route exact path="/" element={<MainPage />} />
-          <Route exact path="/pay" element={<Pay />} />
+          <Route exact path="/payment-flow" element={<MainPage />} />
+          <Route exact path="/payment-flow/pay" element={<Pay />} />
         </Routes>
       </Router>
     </>

@@ -56,7 +56,7 @@ function Pay() {
                   <Button
                     variant="text"
                     color="secondary"
-                    onClick={() => navigate("/")}
+                    onClick={() => navigate("/payment-flow")}
                   >
                     Return home
                   </Button>
