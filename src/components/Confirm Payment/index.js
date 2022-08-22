@@ -6,12 +6,13 @@ import {
   Box,
   Button,
   Card,
-  CardHeader,
   CardContent,
   Divider,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function ConfirmPayment() {
+  const navigate = useNavigate();
   return (
     <Box component="form" noValidate sx={{ mt: 3 }}>
       <Grid container spacing={4} display="flex" flexDirection="column">
@@ -98,8 +99,9 @@ function ConfirmPayment() {
                 color="secondary"
                 fullWidth
                 sx={{ color: "white" }}
+                onClick={() => navigate("/pay")}
               >
-                Next
+                Pay
               </Button>
             </Grid>
             <Grid item xs={6} sm={6}>

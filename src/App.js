@@ -1,15 +1,20 @@
+import { CssBaseline } from "@mui/material";
 import React from "react";
-import { Box, CssBaseline } from "@mui/material";
-import "./App.css";
-import Main from "./components/Main";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Pay from "./components/Pay";
+import MainPage from "./routes";
 
 function App() {
   return (
     <>
-      <Box className="main-page">
+      <Router>
         <CssBaseline />
-        <Main />
-      </Box>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+          <Route exact path="/pay" element={<Pay />} />
+        </Routes>
+      </Router>
     </>
   );
 }
